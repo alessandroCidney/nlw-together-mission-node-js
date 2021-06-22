@@ -1,10 +1,6 @@
 // Caminho: Fabinho\Documents\Alessandro\Programação\NWL
 
-import "reflect-metadata";
 import express from 'express';
-import { router } from "./routes";
-
-import "./database";
 
 // Necessário utilizar o comando yarn @types/express -D
 
@@ -40,12 +36,18 @@ const app = express();
  * }
  */
 
-// O Express trabalha com vários formatos
-// Como utilizamos JSON no body da Request, devemos especificar isso
-app.use(express.json());
+app.get("/test", (request,response) => {
+    // Request => Entrando
+    // Response => Saindo
+    return response.send("Olá NLW / Método GET"); // Acessando localhost:3000/test é possível receber a mensagem
+});
 
-// Inserindo as rotas no Express
-app.use(router);
+// Há erro ao tentar acessar requisições POST pelo navegador
+// Por isso, durante a semana, utilizamos o Insomnia
+// (Criar request collection no Insomnia)
+app.post("/test-post", (request, response) => {
+    return response.send("Olá NLW / Método POST");
+})
 
 // Inicializando o servidor em http://localhost:3000
 app.listen(3000, () => console.log("Server is running!"));
@@ -57,8 +59,3 @@ app.listen(3000, () => console.log("Server is running!"));
 // yarn add ts-node-dev -D
 
 // Possível executar com yarn dev
-
-/**
- * Migrations
- * - Controle de versionamento de tabelas
- */
