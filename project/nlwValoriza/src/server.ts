@@ -20,7 +20,10 @@
 
   /**
    * AULA 4
-   * - Criação e utilização da migration AlterUserAddPassword*/
+   * - Criação e utilização da migration AlterUserAddPassword
+   * - Instalação e utilização da biblioteca bcryptjs para criptografia
+   * - Adicionando a criptografia de senhas através da função hash 
+   * */
 
 import "reflect-metadata";
 import express, { Request, Response, NextFunction } from 'express';
