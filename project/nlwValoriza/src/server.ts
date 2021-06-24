@@ -23,6 +23,7 @@
    * - Criação e utilização da migration AlterUserAddPassword
    * - Instalação e utilização da biblioteca bcryptjs para criptografia
    * - Adicionando a criptografia de senhas através da função hash 
+   * - Criando mecanismo de autenticação
    * */
 
 import "reflect-metadata";
