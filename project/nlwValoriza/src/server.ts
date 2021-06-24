@@ -15,7 +15,12 @@
  /**
   * SUGESTÕES - AULA 3
   * - Criar uma classe de erros customizável(que receberia um status e uma mensagem)
-  * - Lembrar do Try e Catch para tratar erros*/
+  * - Lembrar do Try e Catch para tratar erros
+  * */
+
+  /**
+   * AULA 4
+   * - Criação e utilização da migration AlterUserAddPassword*/
 
 import "reflect-metadata";
 import express, { Request, Response, NextFunction } from 'express';
