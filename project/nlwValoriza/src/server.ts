@@ -24,6 +24,8 @@
    * - Instalação e utilização da biblioteca bcryptjs para criptografia
    * - Adicionando a criptografia de senhas através da função hash 
    * - Criando mecanismo de autenticação
+   * - Criação e utilização da migration responsável pela criação da tabela compliments
+   * - Criação da entity Compliment
    * */
 
 import "reflect-metadata";
