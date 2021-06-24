@@ -1,4 +1,4 @@
-import { Entity, PrimaryColumn, Column, CreateDateColumn, JoinColumn } from "typeorm";
+import { Entity, PrimaryColumn, Column, CreateDateColumn, JoinColumn, ManyToOne } from "typeorm";
 import { v4 as uuid } from "uuid";
 import { Tag } from "./Tag";
 import { User } from "./User";
@@ -40,7 +40,7 @@ class Compliment {
 	@Column()
 	message: string;
 
-	@CreateDateColumn
+	@CreateDateColumn()
 	created_at: string;
 
 	constructor() {

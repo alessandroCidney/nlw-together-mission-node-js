@@ -26,6 +26,7 @@
    * - Criando mecanismo de autenticação
    * - Criação e utilização da migration responsável pela criação da tabela compliments
    * - Criação da entity Compliment
+   * - Criação de controllers, services e rotas relacionadas à entidade Compliment
    * */
 
 import "reflect-metadata";
