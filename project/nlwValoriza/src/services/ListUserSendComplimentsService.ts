@@ -12,7 +12,9 @@ class ListUserSendComplimentsService {
 			where: {
 				user_sender: user_id
 			}
-		})
+		});
+
+		return compliments;
 	}
 }
 
