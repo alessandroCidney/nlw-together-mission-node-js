@@ -8,8 +8,10 @@ class ListTagsService {
 		const tagsRepositories = getCustomRepository(TagsRepositories);
 
 		// Retornando todas as tags
-		
+
 		const tags = await tagsRepositories.find();
+
+		return tags;
 	}
 }
 
