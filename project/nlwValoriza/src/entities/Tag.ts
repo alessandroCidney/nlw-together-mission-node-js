@@ -22,7 +22,7 @@ class Tag {
 	@UpdateDateColumn()
 	updated_at: Date;
 
-	@Expose({name: "nameCustom"})
+	@Expose({name: "name_custom"})
 	nameCustom() : string {
 		return `#${this.name}`; 
 	}
