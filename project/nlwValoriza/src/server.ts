@@ -33,6 +33,10 @@
    /**
     * AULA 5
     * - Criação de middleware ensureAuthenticated para verificação de autenticação
+    * - Correção do mecanismo de verificação de administradores no ensureAdmin
+    * - Passagem de valor do ID do usuário pelo request
+    * 
+    * - Correção no controller CreateComplimentController, que agora capta o user_id pelo request ao invés de receber o user_sender
     * */
 
 import "reflect-metadata";
