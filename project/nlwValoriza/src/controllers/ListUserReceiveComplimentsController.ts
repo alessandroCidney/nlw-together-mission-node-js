@@ -11,7 +11,7 @@ class ListUserReceiveComplimentsController {
 
 		const listUserReceiveComplimentsService = new ListUserReceiveComplimentsService();
 
-		const compliments = listUserReceiveComplimentsService.execute(user_id);
+		const compliments = await listUserReceiveComplimentsService.execute(user_id);
 
 		return response.json(compliments);
 	}

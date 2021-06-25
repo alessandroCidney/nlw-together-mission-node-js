@@ -12,7 +12,7 @@ class ListUserReceiveComplimentsService {
 			where: {
 				user_receiver: user_id
 			}
-		})
+		});
 
 		return compliments;
 	}	
