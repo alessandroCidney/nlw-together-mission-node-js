@@ -49,6 +49,8 @@
     * - Instalação da biblioteca class-transformer
     * 
     * - Criando service, controller e rota para listagem dos usuários disponíveis
+    * 
+    * - Ocultando a senha na listagem de usuários com a função Exclude do class-transformer
     * */
 
 import "reflect-metadata";

@@ -1,7 +1,10 @@
 import { Entity, PrimaryColumn, Column, CreateDateColumn, UpdateDateColumn } from "typeorm";
 
+// Importando a função Exclude
+import { Exclude } from "class-transformer";
+
 // O UUID possui diferentes versões para serem importadas
-import { v4 as uuid } from "uuid";
+import { v4 as uuid } from "uuid"; 
 
 // V4 gera IDs aleatórios
 // Chamados v4 de uuid
@@ -22,6 +25,9 @@ class User {
 	@Column()
 	admin: boolean;
 
+	// Com Exclude, a senha não será mostrada ao exibir a listagem de usuários
+	
+	@Exclude()
 	@Column()
 	password: string;
 

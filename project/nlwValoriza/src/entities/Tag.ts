@@ -3,6 +3,7 @@ import { Entity, PrimaryColumn, Column, CreateDateColumn, UpdateDateColumn } fro
 // Em caso de dúvidas sobre tipos, checar a 
 // documentação do TypeScript
 
+// Importando a função Expose
 import { Expose } from "class-transformer";
 
 import { v4 as uuid } from "uuid";
