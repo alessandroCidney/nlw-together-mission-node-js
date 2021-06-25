@@ -37,6 +37,8 @@
     * - Passagem de valor do ID do usuário pelo request
     * 
     * - Correção no controller CreateComplimentController, que agora capta o user_id pelo request ao invés de receber o user_sender
+    * 
+    * - Criando services para listagem dos elogios recebidos e enviados pelo usuário autenticado
     * */
 
 import "reflect-metadata";
