@@ -47,6 +47,8 @@
     * - Criando service, controller e rota para listagem das tags disponíveis
     * 
     * - Instalação da biblioteca class-transformer
+    * 
+    * - Criando service, controller e rota para listagem dos usuários disponíveis
     * */
 
 import "reflect-metadata";
