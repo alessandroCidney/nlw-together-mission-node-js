@@ -1,11 +1,26 @@
 // Verificação do usuário (é administrador ou não?)
 
 import { Request, Response, NextFunction } from "express";
+import { UsersRepositories } from "../repositories/UsersRepositories";
+import { getCustomRepository } from "typeorm";
 
-export function ensureAdmin(request: Request, response: Response, next: NextFunction) {
-	const admin = true; // Usuário admin
+export async function ensureAdmin(
+	request: Request, 
+	response: Response, 
+	next: NextFunction
+) {
+	
+	// Pegando o user_id de dentro do request
 
-	//const admin = false; // Usuário não admin
+	const { user_id } = request;
+
+	console.log(user_id);
+
+	const usersRepositories = getCustomRepository(UsersRepositories);
+
+	// Captando o boolean admin do usuário com o id informado
+
+	const { admin } = await usersRepositories.findOne(user_id);
 
 	if(admin) {
 		return next();

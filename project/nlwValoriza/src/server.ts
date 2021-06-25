@@ -30,6 +30,11 @@
    * - Adição de valor padrão para o campo admin da tabela de users (o valor false)
    * */
 
+   /**
+    * AULA 5
+    * - Criação de middleware ensureAuthenticated para verificação de autenticação
+    * */
+
 import "reflect-metadata";
 import express, { Request, Response, NextFunction } from 'express';
 import "express-async-errors";
