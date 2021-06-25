@@ -51,11 +51,15 @@
     * - Criando service, controller e rota para listagem dos usuários disponíveis
     * 
     * - Ocultando a senha na listagem de usuários com a função Exclude do class-transformer
+    * 
+    * - Instalando a biblioteca cors e importando em server.ts
     * */
 
 import "reflect-metadata";
 import express, { Request, Response, NextFunction } from 'express';
 import "express-async-errors";
+
+import cors from "cors";
 
 import { router } from "./routes";
 
@@ -65,6 +69,15 @@ import "./database";
 
 // Inicializando o Express
 const app = express();
+
+// O Cors habilita que outras fontes, além do back-end da aplicação, acessem os dados
+app.use(cors());
+
+// Para especificar o site:
+
+// app.use(cors({
+//     origin: ""
+// }));
 
 /**
  * GET    => Buscar informações 
