@@ -41,6 +41,8 @@
     * - Criando services para listagem dos elogios recebidos e enviados pelo usuário autenticado
     * 
     * - Criando controllers para listagem dos elogios recebidos e enviados pelo usuário autenticado
+    * 
+    * - Criação de rotas para listagem dos elogios recebidos e enviados pelo usuário autenticado
     * */
 
 import "reflect-metadata";
