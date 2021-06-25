@@ -45,6 +45,8 @@
     * - Criação de rotas para listagem dos elogios recebidos e enviados pelo usuário autenticado
     * 
     * - Criando service, controller e rota para listagem das tags disponíveis
+    * 
+    * - Instalação da biblioteca class-transformer
     * */
 
 import "reflect-metadata";

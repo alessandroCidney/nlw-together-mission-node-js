@@ -1,5 +1,6 @@
 import { getCustomRepository } from "typeorm";
 import { TagsRepositories } from "../repositories/TagsRepositories";
+import { classToPlain } from "class-transformer";
 
 class ListTagsService {
 
@@ -9,13 +10,11 @@ class ListTagsService {
 
 		// Retornando todas as tags
 
-		let tags = await tagsRepositories.find();
+		const tags = await tagsRepositories.find();
 
-		tags = tags.map(tag => (
-			{...tag, nameCustom: `#${tag.name}`}
-		));
-
-		return tags;
+		// A função classToPlain será responsável por criar novos objetos a partir dos objetos que já vieram em tags
+		// Nesse caso, ela adicionará o "nameCustom", definido na entidade Tag através do Expose
+		return classToPlain(tags);
 	}
 }
 
